@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import InfiniteScroll from "../InfiniteScroll/infiniteScroll";
+import Loader from "../Loader/loader";
 import "./list.css";
 
 const List = ({ actions, sList, sLoading, api }) => {
@@ -18,8 +19,7 @@ const List = ({ actions, sList, sLoading, api }) => {
 
   return (
     <div className="list-container">
-      {console.log(sList[api])}
-      {sList[api]?.length && renderPage()}
+      {sList[api]?.length ? renderPage() : <Loader />}
     </div>
   );
 };
