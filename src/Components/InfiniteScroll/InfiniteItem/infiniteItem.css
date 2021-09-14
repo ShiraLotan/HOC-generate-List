@@ -1,0 +1,16 @@
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px;
+  background: rgba(246, 240, 224, 0.6);
+}
+.list-group-item span span.list-headline {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #000;
+}
