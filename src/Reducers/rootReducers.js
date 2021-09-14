@@ -1,5 +1,4 @@
 import { combineReducers } from "redux";
-import usersReducers from "./Users/usersReducers";
-import reviewersReducer from "./Reviewers/reviewersReducer";
+import listReducers from "./List/listReducers";
 
-export default combineReducers({ usersReducers, reviewersReducer });
+export default combineReducers({ listReducers });

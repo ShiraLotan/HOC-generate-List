@@ -1,12 +1,11 @@
-import UsersContainer from "../../Container/Users/usersContainer";
-import ReviewersContainer from "../../Container/Reviewers/reviewersContainer";
+import ListContainer from "../../Container/List/listContainer";
 
 import "./App.css";
 
 const App = () => (
   <div className="App">
-    <UsersContainer />
-    <ReviewersContainer />
+    <ListContainer api="users" />
+    <ListContainer api="reviewers" />
   </div>
 );
 
